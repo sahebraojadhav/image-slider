@@ -1,6 +1,6 @@
 const slider = document.querySelector(".slider");
 const dotsContainer=document.querySelector('.dots-container');
-
+const image=document.querySelector(".images")
 
 async function fetchListOfImages() {
   try {
@@ -21,7 +21,7 @@ async function fetchListOfImages() {
 function displayImages(imagesList) {
   slider.innerHTML = imagesList.map(
     (item) => `
-    <div class="slider">
+    <div class="slide">
     <img src=${item.download_url} alt=${item.id}>
     ${console.log(item.download_url)}
     </div>
@@ -33,6 +33,10 @@ function displayImages(imagesList) {
     <span class="dot" data-slide="${index}"></span>
     `
   ).join(" ");
+
+
 }
 
 fetchListOfImages();
+
+
