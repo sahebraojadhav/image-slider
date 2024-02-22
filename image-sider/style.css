@@ -1,29 +1,26 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
     box-sizing: border-box;
+    padding: 0px;
 }
 
-html{
+html {
     font-size: 1rem;
-    font-family: futura;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background-color: rgb(136, 0, 255);
     padding: 15px;
 }
 
-h1{
-    color: white;
-    margin-bottom: 30px ;
-   
-    text-align:center;
+h1 {
+    color: rgb(255, 242, 0);
+    margin-bottom: 30px;
 }
 
-.slider{
+.slider {
     position: relative;
     max-width: 45rem;
     height: 25rem;
@@ -37,8 +34,8 @@ h1{
     width: 100%;
     height: 25rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .slide img{
@@ -47,14 +44,14 @@ h1{
     object-fit: cover;
 }
 
-.bottom-container{
+.bottom-container {
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
     margin-top: 30px;
 }
 
-.bottom-container button{
+.bottom-container button {
     padding: 10px 30px;
     background-color: rgb(255, 242, 0);
     border: none;
@@ -63,7 +60,7 @@ h1{
     cursor: pointer;
 }
 
-.dots-container{
+.dots-container {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -71,10 +68,13 @@ h1{
 }
 
 .dots-container .dot{
-    width: 30px;
-    height: 10px;
+    width: 40px;
+    height: 15px;
     border-radius: 8px;
     background-color: #ffffff;
     cursor: pointer;
+}
 
+.dots-container .dot.active {
+    background-color: #000;
 }
